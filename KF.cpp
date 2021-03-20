@@ -65,5 +65,13 @@ void KF::kalman(float x[2], float P[4],float u,float z)
 
 x[0]=x1;
 x[1]=x2;
+   float p11 = P[0];
+  float p12 = P[1];
+  float p21 = P[2];
+  float p22 = P[3];
+ P[0]=p11;
+ P[1]=p12;
+ P[2]=p21;
+ P[3]=p22;
  
 }
