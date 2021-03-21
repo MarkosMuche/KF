@@ -25,7 +25,7 @@ void KF::getQR(float Q[4], float R){
   this->_R=R;
 }
 //Kalmanfiltethis->_R
-void KF::kalman(float x[2], float P[4],float u,float z)
+float* KF::kalman(float x[2], float P[4],float u,float z)
 {
 
     float  S;
