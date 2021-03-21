@@ -14,7 +14,7 @@ class KF {
     //methods
     void getABC(float  A[4], float B[2], float C[2]);
     void getQR(float Q[4], float R);
-    void kalman(float x[2], float P[4], float u, float z);
+    float* kalman(float x[2], float P[4], float u, float z);
     
     // fields
     float _A[4];
